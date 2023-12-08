@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lee Li's Publications</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">Publications</h2>
+
+        <!-- Publication 1 -->
+        <div class="publication">
+            <h4>Publication Title</h4>
+            <p><strong>Authors:</strong> Wenwei Zhao, <span style="text-decoration: underline;">Xiaowen Li</span>, Shangqing Zhao, Jie Xu, Yao Liu, and Zhuo Lu</p>
+            <p><strong>Conference:</strong> IEEE Conference on Computer Communications (INFOCOM), May, 2024</p>
+            <p><a href="link_to_pdf.pdf" target="_blank">PDF</a></p>
+            <p><strong>BibTeX:</strong> <a href="javascript:void(0);" onclick="showBibtex('bibtex1')">Show</a></p>
+            <pre id="bibtex1" style="display:none;">
+@INPROCEEDINGS{23zlz-infocom,
+  author = {Wenwei Zhao and Xiaowen Li and Shangqing Zhao and Jie Xu and Yao Liu and Zhuo Lu},
+  title = {Detecting Adversarial Spectrum Attacks via Distance to Decision Boundary Statistics},
+  booktitle = {Proc. of IEEE Conference on Computer Communications (INFOCOM)},
+  year = {May, 2024}
+}
+            </pre>
+        </div>
+
+        <!-- Add more publications as needed -->
+
+    </div>
+
+    <script>
+        function showBibtex(id) {
+            var elem = document.getElementById(id);
+            if (elem.style.display === "none") {
+                elem.style.display = "block";
+            } else {
+                elem.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
